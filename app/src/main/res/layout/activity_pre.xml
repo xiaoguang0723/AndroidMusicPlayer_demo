@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pre">
+
+
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入"
+        android:textSize="20dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/black"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="300dp"
+        android:text="欢迎使用小蓝音乐APP"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="28sp" />
+
+</LinearLayout>

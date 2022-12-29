@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/mych_login/app/src/main/res/drawable/button_next.xml" value="0.22" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/drawable/button_play_main.xml" value="0.22" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/drawable/button_previous.xml" value="0.22" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/drawable/button_selector.xml" value="0.22" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/drawable/button_stop.xml" value="0.22" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/activity_information.xml" value="0.1" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/activity_music.xml" value="0.25" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/activity_pre.xml" value="0.27853260869565216" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/fragment_mine.xml" value="0.1" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/item_layout.xml" value="0.2296195652173913" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/list_item_layout.xml" value="0.33" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/register_layout.xml" value="0.33" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/third_layout.xml" value="0.33" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/user_insert.xml" value="0.2296195652173913" />
+        <entry key="..\:/Android/mych_login/app/src/main/res/layout/user_search_delete.xml" value="0.2296195652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

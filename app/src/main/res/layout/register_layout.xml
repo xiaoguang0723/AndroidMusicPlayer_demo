@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:src="@mipmap/applogo" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="40dp"
+                android:text="用户名:"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_marginTop="45dp"
+                android:text="设置密码:"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="45dp"
+                android:text="确认密码:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/logo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@id/text3"
+                android:hint="请设置您的用户名" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/account"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/text3"
+                android:hint="请设置您的密码"
+                android:inputType="numberPassword" />
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/password"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/text3"
+                android:hint="再次确认您的密码"
+                android:inputType="numberPassword" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password2"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/cardview_dark_background"
+                android:text="您的性别："
+                android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/radiobutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="女" />
+
+        </RadioGroup>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sex"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/cardview_dark_background"
+                android:text="您的爱好："
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout2"
+                android:orientation="horizontal"
+                android:layout_below="@id/text5">
+
+                <CheckBox
+                    android:id="@+id/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android" />
+
+                <CheckBox
+                    android:id="@+id/ios"
+                    android:text="iOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/linux"
+                    android:text="Linux"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/java"
+                    android:text="Java"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/CPlus"
+                    android:text="C++"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/VB"
+                    android:text="VB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+            <Spinner
+                android:layout_below="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"/>
+
+            <Button
+                android:id="@+id/zhuce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginRight="50dp"
+                android:background="#545bcb"
+                android:onClick="RegisterSuccess"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginRight="20dp"
+                android:background="#545bcb"
+                android:onClick="backToMain"
+                android:text="取消 "
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

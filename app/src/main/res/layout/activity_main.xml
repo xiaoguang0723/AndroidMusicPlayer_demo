@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:src="@mipmap/applogo" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="40dp"
+        android:text="用户名:"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="45dp"
+        android:text="密码:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/text1"
+        android:hint="请输入您的用户名" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/account"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/text1"
+        android:hint="请输入您的密码"
+        android:inputType="numberPassword" />
+
+    <CheckBox
+        android:id="@+id/rememberpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/text1"
+        android:checked="false"
+        android:text="记住密码" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/rememberpwd"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="register1"
+        android:text="注册账号"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="50dp"
+        android:background="#545bcb"
+        android:onClick="login"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/forget_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="20dp"
+        android:background="#545bcb"
+        android:text="忘记密码"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:onClick="forgetpwd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_content"/>
+
+    <TextView
+        android:id="@+id/admin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/rememberpwd"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="admin"
+        android:textSize="15sp" />
+</RelativeLayout>
