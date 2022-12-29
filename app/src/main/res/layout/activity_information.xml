@@ -120,8 +120,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="源代码已上传至github,(待上传),欢迎学习。"
+        android:text="源代码已上传至github,https://github.com/xiaoguang0723/AndroidMusicPlayer_demo
+,欢迎学习。"
         android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
 
         </LinearLayout>
     </ScrollView>
